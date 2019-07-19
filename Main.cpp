@@ -30,12 +30,11 @@ void Logic()
     std::cout << "Enter force applied to the object. (Newtons)" << std::endl;
     std::cin >> Force;
 
-    //For the equation to work force should be squred
-    Force = Force * 2;
-
     //Calculating Velocity value by dividing F/M
     Velocity = Force / Mass;
 
+    Velocity = Velocity * Velocity;
+    
     //Calculating time that it'll get to travel the distance
     ETA = Distance / Velocity;
 
